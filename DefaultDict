@@ -1,0 +1,11 @@
+from collections import defaultdict
+n, m = map(int, input().split())
+d = defaultdict(list)
+for i in range(n):
+    d[input()].append(i+1)
+for j in range(m):
+    s = input()
+    if s in d:
+        print(*d[s]) #The * in the print functions enables us to print the value(s) of a list in form of a string, that is, without commas and square brackets.
+    else:
+        print(-1)

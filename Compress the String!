@@ -30,6 +30,12 @@ First, the character  occurs only once. It is replaced by . Then the character  
 Also, note the single space within each compression and between the compressions.
 
 
+------------------------------------------------------------------------------------------
+# [k for k, g in groupby('AAAABBBCCDAABBB')] --> A B C D A B
+
+# [list(g) for k, g in groupby('AAAABBBCCD')] --> AAAA BBB CC D
+-------------------------------------------------------------------------------------
+
 from itertools import groupby
 s=input()
 
